@@ -1,4 +1,13 @@
-body {
-  font-family: Garamond, serif;
-  font-size: 4.8rem;
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: Garamond, 'Amiri' serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
