@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   font-family: Garamond, 'Amiri' serif;
+  font-size: 1.5rem;
 }
 
 *,
@@ -11,3 +12,124 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
+
+.header {
+  height: 150px;
+  background-color: #e9e6e1;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.header__container {
+  width: 1110px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 150px;
+  gap: 0.3em;
+}
+
+.header__title {
+  color: #352f39;
+}
+
+.title-holder {
+  height: 100px;
+  width: 1110px;
+  margin: 1em auto;
+  background-color: #e9e6e1;
+  color: #352f39;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.mission-statement__container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.mission-statement__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+}
+
+.mission-statement__text-container {
+  padding: 1em;
+  background-color: #e9e6e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2b475c;
+}
+
+.mission-statement__text {
+  margin-bottom: 1em;
+}
+
+.products__container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.products__main-image-container {
+  min-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e9e6e1;
+}
+
+.products__main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+}
+
+.products__text-container {
+  background-color: #e9e6e1;
+  padding: 1em;
+  font-size: 0.95rem;
+  color: #2b475c;
+}
+
+.products__main-text {
+  margin-bottom: 1em;
+}
+
+.products__main-text--bold {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
