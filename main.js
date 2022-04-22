@@ -15,6 +15,7 @@ function enableStepSlider() {
   let $SliderContainer = document.querySelector('.product-process__container');
   let $nextBtn = document.getElementById('step-slider-next');
   let $prevBtn = document.getElementById('step-slider-prev');
+  let $stepCounter = document.getElementById('step-counter');
 
   let currentSlide = 0;
   let slideCount = $SliderContainer.children.length;
@@ -26,6 +27,7 @@ function enableStepSlider() {
 
     currentSlide++;
     $SliderContainer.style.left = `${-currentSlide * 50}%`;
+    $stepCounter.innerText = `${currentSlide + 1} of 8`;
   }
 
   function prevBtnClick() {
@@ -35,6 +37,7 @@ function enableStepSlider() {
 
     currentSlide--;
     $SliderContainer.style.left = `${-currentSlide * 50}%`;
+    $stepCounter.innerText = `${currentSlide + 1} of 8`;
   }
 
   $nextBtn.addEventListener('click', nextBtnClick);

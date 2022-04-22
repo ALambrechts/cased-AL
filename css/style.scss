@@ -165,6 +165,9 @@ $width: 1110px;
 
   &__text {
     padding: 1em;
+    height: 150px;
+    background-color: $beige;
+    color: $blue;
   }
 
   &__button-holder {
@@ -193,5 +196,13 @@ $width: 1110px;
     border-color: transparent transparent transparent $indigo-black;
     border-left-width: 25px;
     border-right-width: 0;
+  }
+
+  &__step-counter {
+    position: absolute;
+    display: block;
+
+    right: 38rem;
+    font-size: 1.5rem;
   }
 }

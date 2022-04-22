@@ -193,6 +193,9 @@ html {
 
 .product-process__text {
   padding: 1em;
+  height: 150px;
+  background-color: #e9e6e1;
+  color: #2b475c;
 }
 
 .product-process__button-holder {
@@ -220,5 +223,12 @@ html {
   border-color: transparent transparent transparent #352f39;
   border-left-width: 25px;
   border-right-width: 0;
+}
+
+.product-process__step-counter {
+  position: absolute;
+  display: block;
+  right: 38rem;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
