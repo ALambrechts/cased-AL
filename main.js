@@ -20,6 +20,8 @@ function enableStepSlider() {
   let currentSlide = 0;
   let slideCount = $SliderContainer.children.length;
 
+  $SliderContainer.style.left = '-0%';
+
   function nextBtnClick() {
     if (currentSlide === slideCount - 2) {
       return;
@@ -27,7 +29,7 @@ function enableStepSlider() {
 
     currentSlide++;
     $SliderContainer.style.left = `${-currentSlide * 50}%`;
-    $stepCounter.innerText = `${currentSlide + 1} of 8`;
+    $stepCounter.innerText = `${currentSlide + 1} of 7`;
   }
 
   function prevBtnClick() {
@@ -37,7 +39,7 @@ function enableStepSlider() {
 
     currentSlide--;
     $SliderContainer.style.left = `${-currentSlide * 50}%`;
-    $stepCounter.innerText = `${currentSlide + 1} of 8`;
+    $stepCounter.innerText = `${currentSlide + 1} of 7`;
   }
 
   $nextBtn.addEventListener('click', nextBtnClick);
