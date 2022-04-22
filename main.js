@@ -64,11 +64,36 @@ function validateSubmit() {
   let $contactEmail = document.getElementById('contact-email');
   let $contactMessage = document.getElementById('contact-msg');
 
-  let nameError = null;
-  let emailError = null;
-  let questionError = null;
+  let errorTriggered = null;
+
+  let validSymbols = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if ($contactName.value.length > 50 || $contactName.value.length === 0) {
+    errorTriggered = 1;
+    alert('Gelieve een naam onder 50 karakters in te vullen.');
+  }
+
+  if (
+    !$contactEmail.value.match(validSymbols) ||
+    $contactEmail.value.length === 0 ||
+    $contactEmail.value.length > 100
+  ) {
+    errorTriggered = 1;
+    alert('Gelieve een geldig email address in te geven.');
+  }
+
+  if ($contactMessage.length === 0 || $contactMessage.value.length > 5000) {
+    // todo, show character limit counter
+    errorTriggered = 1;
+    alert('Gelieve een bericht onder 5000 karakters in te voeren.');
+  }
+
+  if (errorTriggered === 1) {
+  } else {
+    alert('Bericht succevol verstuurd!');
+  }
 }
 
 // event listeners
 
-$submitButton.addEventListener('submit', formSubmit);
+$submitButton.addEventListener('click', formSubmit);
