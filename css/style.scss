@@ -280,6 +280,9 @@ $width: 1110px;
 
   &__nav {
     margin-top: 1.5em;
+
+    display: flex;
+    justify-content: space-between;
   }
 
   &__copyright {
