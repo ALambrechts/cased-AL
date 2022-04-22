@@ -321,7 +321,8 @@ html {
 }
 
 .footer__text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
 }
 
 .footer__flex-container--contact {
