@@ -248,14 +248,19 @@
         <form class="footer__contact-form">
           <label class="footer__label">
             Naam
-            <input type="text" name="contact-name" class="contact-form__input" />
+            <input type="text" name="contact-name" id="contact-name" class="contact-form__input" />
           </label>
           <label class="footer__label">
             E-mail
-            <input type="email" name="contact-email" class="contact-form__input" />
+            <input type="email" name="contact-email" id="contact-email" class="contact-form__input" />
           </label>
-          <textarea type="text" name="contact-msg" class="contact-form__input" rows="5">Schrijf hier je vraag</textarea>
-          <button type="submit" class="contact-form__input contact-form__input--button">Vraag versturen</button>
+          <textarea type="text" name="contact-msg" id="contact-message" class="contact-form__input" rows="5">
+Schrijf hier je vraag
+					</textarea
+          >
+          <button type="submit" id="submit-button" class="contact-form__input contact-form__input--button">
+            Vraag versturen
+          </button>
         </form>
         <span class="footer__copyright">Copyright&copy;Cased</span>
       </div>

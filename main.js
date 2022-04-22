@@ -1,5 +1,6 @@
-$productsSlider = document.querySelector('.products__slider');
-$productsMainImage = document.querySelector('.products__main-image');
+let $productsSlider = document.querySelector('.products__slider');
+let $productsMainImage = document.querySelector('.products__main-image');
+let $submitButton = document.getElementById('submit-button');
 
 function changeProductImage(event) {
   if (event.target.hasAttribute('src')) {
@@ -49,3 +50,17 @@ function enableStepSlider() {
 window.addEventListener('load', function () {
   enableStepSlider();
 });
+
+// form submit
+
+function formSubmit(event) {
+  event.preventDefault();
+
+  validateSubmit();
+}
+
+function validateSubmit() {}
+
+// event listeners
+
+$submitButton.addEventListener('submit', formSubmit);
