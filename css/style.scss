@@ -255,6 +255,7 @@ $width: 1110px;
     display: flex;
     flex-flow: column;
     gap: 0.75em;
+    width: 320px;
   }
 
   &__link {
@@ -265,4 +266,17 @@ $width: 1110px;
     display: flex;
     justify-content: space-between;
   }
+
+  &__text {
+    font-size: 1.2rem;
+  }
+
+  &__flex-container--contact {
+    justify-content: end;
+  }
+}
+
+.contact-form__input {
+  border: none;
+  background-color: $beige;
 }

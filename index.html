@@ -244,24 +244,21 @@
 
     <footer class="footer">
       <div class="footer__flex-container">
+        <span class="footer__text"> Nog vragen? Neem contact op! </span>
         <form class="footer__contact-form">
-          <span class="footer__text"> Nog vragen? Neem contact op! </span>
           <label class="footer__label">
             Naam
-            <input type="text" name="contact-name" />
+            <input type="text" name="contact-name" class="contact-form__input" />
           </label>
           <label class="footer__label">
             E-mail
-            <input type="email" name="contact-email" />
+            <input type="email" name="contact-email" class="contact-form__input" />
           </label>
-          <label class="footer__label">
-            Vraag
-            <input type="text" name="contact-msg" />
-          </label>
+          <textarea type="text" name="contact-msg" class="contact-form__input" rows="5">Schrijf hier je vraag</textarea>
         </form>
         <span class="footer__copyright">Copyright&copy;Cased</span>
       </div>
-      <div class="footer__flex-container">
+      <div class="footer__flex-container footer__flex-container--contact">
         <span class="footer__adress"> Oordegemstraat 33, 9520 Vlierzele </span>
         <span class="footer__email"> info@CASED.be </span>
 
