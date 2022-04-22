@@ -261,7 +261,24 @@ $width: 1110px;
   }
 
   &__link {
-    color: $beige;
+    color: transparent;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__link--facebook {
+    background-image: url('../assets/icons-facebook.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 60px;
+    height: 60px;
+  }
+
+  &__link--instagram {
+    background-image: url('../assets/icons-instagram.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__label {
@@ -282,7 +299,8 @@ $width: 1110px;
     margin-top: 1.5em;
 
     display: flex;
-    justify-content: space-between;
+    align-items: end;
+    gap: 1em;
   }
 
   &__copyright {

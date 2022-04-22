@@ -308,7 +308,23 @@ html {
 }
 
 .footer__link {
-  color: #e9e6e1;
+  color: transparent;
+  width: 50px;
+  height: 50px;
+}
+
+.footer__link--facebook {
+  background-image: url("../assets/icons-facebook.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+}
+
+.footer__link--instagram {
+  background-image: url("../assets/icons-instagram.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer__label {
@@ -336,9 +352,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  gap: 1em;
 }
 
 .footer__copyright {
