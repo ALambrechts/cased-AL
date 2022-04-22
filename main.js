@@ -62,7 +62,7 @@ function formSubmit(event) {
 function validateSubmit() {
   let $contactName = document.getElementById('contact-name');
   let $contactEmail = document.getElementById('contact-email');
-  let $contactMessage = document.getElementById('contact-msg');
+  let $contactMessage = document.getElementById('contact-message');
 
   let errorTriggered = null;
 
