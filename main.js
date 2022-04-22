@@ -59,7 +59,15 @@ function formSubmit(event) {
   validateSubmit();
 }
 
-function validateSubmit() {}
+function validateSubmit() {
+  let $contactName = document.getElementById('contact-name');
+  let $contactEmail = document.getElementById('contact-email');
+  let $contactMessage = document.getElementById('contact-msg');
+
+  let nameError = null;
+  let emailError = null;
+  let questionError = null;
+}
 
 // event listeners
 
