@@ -206,3 +206,29 @@ $width: 1110px;
     font-size: 1.5rem;
   }
 }
+
+.about {
+  @include container;
+
+  &__title-holder {
+    margin-bottom: 2em;
+  }
+
+  &__info-container {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $beige;
+    padding: 1em 0.5em 1em 0.5em;
+    border-radius: 40px;
+  }
+
+  &__image-container {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    color: $blue;
+
+    gap: 1em;
+  }
+}
