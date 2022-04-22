@@ -23,13 +23,13 @@ function enableStepSlider() {
   $SliderContainer.style.left = '-0%';
 
   function nextBtnClick() {
-    if (currentSlide === slideCount - 2) {
+    if (currentSlide === slideCount - 1) {
       return;
     }
 
     currentSlide++;
-    $SliderContainer.style.left = `${-currentSlide * 50}%`;
-    $stepCounter.innerText = `${currentSlide + 1} of 7`;
+    $SliderContainer.style.left = `${-currentSlide * 125}%`;
+    $stepCounter.innerText = `${currentSlide + 1} of 8`;
   }
 
   function prevBtnClick() {
@@ -38,8 +38,8 @@ function enableStepSlider() {
     }
 
     currentSlide--;
-    $SliderContainer.style.left = `${-currentSlide * 50}%`;
-    $stepCounter.innerText = `${currentSlide + 1} of 7`;
+    $SliderContainer.style.left = `${-currentSlide * 125}%`;
+    $stepCounter.innerText = `${currentSlide + 1} of 8`;
   }
 
   $nextBtn.addEventListener('click', nextBtnClick);

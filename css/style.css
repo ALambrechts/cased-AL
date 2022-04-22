@@ -181,8 +181,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
+  margin-right: 50%;
+  margin-left: 25%;
 }
 
 .product-process__slide img {
@@ -250,7 +250,7 @@ html {
           justify-content: space-between;
   background-color: #e9e6e1;
   padding: 1em 0.5em 1em 0.5em;
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
 }
 
 .about__image-container {
@@ -264,5 +264,30 @@ html {
   text-align: center;
   color: #2b475c;
   gap: 1em;
+}
+
+.footer {
+  max-width: 1110px;
+  margin: 0 auto;
+  background-color: #352f39;
+  color: #e9e6e1;
+  padding: 8em 1.5em 1.5em 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 0.5em;
 }
 /*# sourceMappingURL=style.css.map */

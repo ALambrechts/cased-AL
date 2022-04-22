@@ -153,8 +153,8 @@ $width: 1110px;
     position: relative;
     display: flex;
     flex-flow: column;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
+    margin-right: 50%;
+    margin-left: 25%;
 
     img {
       display: block;
@@ -220,7 +220,7 @@ $width: 1110px;
 
     background-color: $beige;
     padding: 1em 0.5em 1em 0.5em;
-    border-radius: 40px;
+    border-radius: 40px 40px 0 0;
   }
 
   &__image-container {
@@ -230,5 +230,22 @@ $width: 1110px;
     color: $blue;
 
     gap: 1em;
+  }
+}
+
+.footer {
+  @include container;
+
+  background-color: $indigo-black;
+  color: $beige;
+  padding: 8em 1.5em 1.5em 1.5em;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__flex-container {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5em;
   }
 }
