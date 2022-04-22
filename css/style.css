@@ -132,4 +132,18 @@ html {
 .products__main-text--bold {
   font-weight: bold;
 }
+
+.products__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.5em;
+}
+
+.products__image {
+  background-color: #e9e6e1;
+}
 /*# sourceMappingURL=style.css.map */

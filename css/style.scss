@@ -118,4 +118,14 @@ $width: 1110px;
   &__main-text--bold {
     font-weight: bold;
   }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+  }
+
+  &__image {
+    background-color: $beige;
+  }
 }
