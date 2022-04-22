@@ -18,6 +18,8 @@ $beige: #e9e6e1;
 $green: #5e8a75;
 $indigo-black: #352f39;
 $blue: #2b475c;
+$red: #de3e4e;
+
 $width: 1110px;
 
 @mixin container {
@@ -239,7 +241,7 @@ $width: 1110px;
   background-color: $indigo-black;
   color: $beige;
   font-size: 0.85rem;
-  padding: 8em 1.5em 1.5em 1.5em;
+  padding: 8em 2em 4em 2em;
 
   display: flex;
   justify-content: space-between;
@@ -275,10 +277,22 @@ $width: 1110px;
   &__flex-container--contact {
     justify-content: end;
   }
+
+  &__nav {
+    margin-top: 1.5em;
+  }
+
+  &__copyright {
+    margin-top: 1.5em;
+  }
 }
 
 .contact-form__input {
   border: none;
   background-color: $beige;
   padding: 0.5em;
+
+  &--button {
+    background-color: $red;
+  }
 }
